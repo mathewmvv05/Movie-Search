@@ -1,4 +1,4 @@
-# TestMovieSearchEngine
+# Movie-Search
 
 This is a basic single page angular application for searching movie using Redux pattern.
 Search is done using a public API from https://developers.themoviedb.org.
