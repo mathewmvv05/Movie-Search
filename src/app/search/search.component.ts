@@ -18,11 +18,12 @@ import {IStore} from '../core/store';
 })
 export class SearchComponent {
 
+  // Variable for getting the keyword from user input
   public keyword: string;
 
   constructor(private _store: Store<IStore>) {}
 
-  // Variable for getting the keyword from user input
+  // Method for getting the user input
   public onKey(value: string) {
     this.keyword = value;
   }
