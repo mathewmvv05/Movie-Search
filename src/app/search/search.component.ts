@@ -6,9 +6,14 @@ import {IStore} from '../core/store';
 @Component({
   selector: 'app-search',
   template: `
-    <p>Enter the movie name:</p><input #box type="text" (keyup)="onKey(box.value)">
-    <button (click)="testMethod()">Search</button>
-    <app-search-results></app-search-results>
+    <div>
+      <h1>Movie Search Engine</h1>
+      <p>Enter the movie name:<input #box type="text" (keyup)="onKey(box.value)">
+      <button (click)="testMethod()">Search</button></p>
+    </div>
+    <div>
+      <app-search-results></app-search-results>
+    </div>
   `
 })
 export class SearchComponent {

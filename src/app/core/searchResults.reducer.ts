@@ -1,5 +1,4 @@
 import {KEY_WORD_SEARCH_SUCCESS} from './api.actions';
-
 import { ISearchResults } from '../search/searchResults.interface';
 
 export function searchResultsReducer(state: ISearchResults[] = null, action): ISearchResults[] {

@@ -5,4 +5,5 @@ export interface ISearchResults {
   overview: string;
   imgPath: string;
   poster_path: string;
+  vote_average: number;
 }

@@ -13,8 +13,9 @@ import {Observable} from 'rxjs';
         <img class="poster" [src]="'https://image.tmdb.org/t/p/w500/' + results.poster_path">
         <h2>{{results.title}}</h2>
         <p>Release Date: {{results.release_date}}</p>
-        <p>Over View: {{results.overview}}</p>
+        <p>Overview: {{results.overview}}</p>
         <p>Language: {{results.original_language}}</p>
+        <p>Rating: {{results.vote_average}}</p>
         <hr>
       </div>
     </div>
