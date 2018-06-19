@@ -4,9 +4,9 @@ import { switchMap } from 'rxjs/operators';
 import {HttpClient} from '@angular/common/http';
 import {catchError, map} from 'rxjs/internal/operators';
 
-import {KeyWordSearchAction, KEY_WORD_SEARCH, KeyWordSearchSuccessAction} from './api.actions';
-import { api } from '../../environments/environment';
-import {IResult} from '../search/result.interface';
+import {KeyWordSearchAction, KEY_WORD_SEARCH, KeyWordSearchSuccessAction} from './search.actions';
+import { api } from '../../../environments/environment';
+import {IResult} from '../../search/result.interface';
 
 @Injectable()
 export class MovieSearchEffects {

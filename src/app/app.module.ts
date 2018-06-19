@@ -8,7 +8,7 @@ import { appRouting } from './app.routing';
 
 import { AppComponent } from './app.component';
 import {reducers} from './core/reducers';
-import { MovieSearchEffects } from './core/api.effects';
+import { MovieSearchEffects } from './core/search/search.effects';
 import {SearchModule} from './search/searchModule';
 
 

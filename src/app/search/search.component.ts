@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {Store} from '@ngrx/store';
-import {KeyWordSearchAction} from '../core/api.actions';
+import {KeyWordSearchAction} from '../core/search/search.actions';
 import {IStore} from '../core/store';
 
 @Component({

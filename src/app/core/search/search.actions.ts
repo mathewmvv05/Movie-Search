@@ -1,6 +1,7 @@
+
 import {Action} from '@ngrx/store';
 
-import {ISearchResults} from '../search/searchResults.interface';
+import {ISearchResults} from '../../search/searchResults.interface';
 
 export const KEY_WORD_SEARCH = '[Search] keyword';
 export const KEY_WORD_SEARCH_SUCCESS = '[Search] keyword success';
