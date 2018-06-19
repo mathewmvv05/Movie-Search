@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const appRoutes: Routes = [
   {
-    // This is to redirect the application when to home page
+    // This is to redirect the application to home page when URL is empty
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'
