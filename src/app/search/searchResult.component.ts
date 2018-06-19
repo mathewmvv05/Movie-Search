@@ -14,7 +14,7 @@ import {Observable} from 'rxjs';
         <h2>{{results.title}}</h2>
         <p>Release Date: {{results.release_date}}</p>
         <p>Over View: {{results.overview}}</p>
-        <p>language: {{results.language}}</p>
+        <p>Language: {{results.original_language}}</p>
         <hr>
       </div>
     </div>

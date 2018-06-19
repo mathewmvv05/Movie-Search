@@ -1,6 +1,6 @@
 export interface ISearchResults {
   title: string;
-  language: string;
+  original_language: string;
   release_date: string;
   overview: string;
   imgPath: string;

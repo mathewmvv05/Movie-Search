@@ -1,4 +1,4 @@
-import {ISearchResults} from "./searchResults.interface";
+import {ISearchResults} from './searchResults.interface';
 
 export interface IResult {
   page: number;
