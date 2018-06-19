@@ -2,7 +2,8 @@
 
 This is a basic single page angular application for searching movie using Redux pattern.
 Search is done using a public API from https://developers.themoviedb.org.
-The request is authorized with the API key that can be generated from above URL.
+The request is authorized with the API key that can be generated from above URL. The search results
+contain Title, Release Date, Overview, Language and Rating of each movie.
 
 ## Development server
 
