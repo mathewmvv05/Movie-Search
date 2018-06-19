@@ -3,8 +3,11 @@ import { Injectable } from '@angular/core';
 import { switchMap } from 'rxjs/operators';
 import {HttpClient} from '@angular/common/http';
 
-import { KeyWordSearchAction, KEY_WORD_SEARCH } from './api.actions';
+import {KeyWordSearchAction, KEY_WORD_SEARCH, KeyWordSearchSuccessAction} from './api.actions';
 import { api } from '../../environments/environment';
+import {catchError, map} from 'rxjs/internal/operators';
+import {ISearchResults} from '../search/searchResults.interface';
+import {IResult} from "../search/result.interface";
 
 @Injectable()
 export class MovieSearchEffects {
@@ -18,6 +21,13 @@ export class MovieSearchEffects {
   public movies: any = this.actions$
     .pipe(
       ofType(KEY_WORD_SEARCH),
-      switchMap((action: KeyWordSearchAction) => this.http.get(`https://api.themoviedb.org/3/search/movie?api_key=${api.apiKey}&language=en-US&query=${action.payload}&page=1&include_adult=false`))
+      switchMap((action: KeyWordSearchAction) => this.http.get<IResult>(`https://api.themoviedb.org/3/search/movie?api_key=${api.apiKey}&language=en-US&query=${action.payload}&page=1&include_adult=false`)
+        .pipe(
+          map((payload) => new KeyWordSearchSuccessAction(payload.results)),
+          catchError((error: any) => {
+            console.log('Something went wrong, Try again later...!');
+            return null;
+          })
+        ))
     );
 }

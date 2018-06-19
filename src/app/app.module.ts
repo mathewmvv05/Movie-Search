@@ -4,9 +4,12 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import {HttpClientModule} from '@angular/common/http';
 
+import { appRouting } from './app.routing';
+
 import { AppComponent } from './app.component';
 import {reducers} from './core/reducers';
 import { MovieSearchEffects } from './core/api.effects';
+import {SearchModule} from './search/searchModule';
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { MovieSearchEffects } from './core/api.effects';
     ]),
     HttpClientModule,
     BrowserModule,
-    StoreModule.forRoot(reducers)
+    StoreModule.forRoot(reducers),
+    SearchModule,
+
+    appRouting
   ],
   providers: [],
   bootstrap: [AppComponent]
