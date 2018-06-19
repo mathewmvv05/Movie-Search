@@ -5,6 +5,9 @@
 export const environment = {
   production: false
 };
+export const api = {
+  apiKey: '15a12ff4a12a0ca10b6bb3d8e8826eee'
+};
 
 /*
  * In development mode, to ignore zone related error stack frames such as
