@@ -6,6 +6,7 @@ import {IStore} from '../core/store';
 @Component({
   selector: 'app-search',
   template: `
+    <!--This template part could be done better incase of unlimited time-->
     <div>
       <h1>Movie Search Engine</h1>
       <p>Enter the movie name:<input #box type="text" (keyup)="onKey(box.value)">
