@@ -1,4 +1,4 @@
-import {KEY_WORD_SEARCH_SUCCESS, KeyWordSearchSuccessAction} from './api.actions';
+import {KEY_WORD_SEARCH_SUCCESS} from './api.actions';
 
 import { ISearchResults } from '../search/searchResults.interface';
 
