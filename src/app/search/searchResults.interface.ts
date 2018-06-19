@@ -1,3 +1,4 @@
+// Interface to define the type of result we need from the api data result
 export interface ISearchResults {
   title: string;
   original_language: string;
