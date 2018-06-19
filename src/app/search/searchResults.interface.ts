@@ -1,8 +1,8 @@
 export interface ISearchResults {
   title: string;
   language: string;
-  releaseDate: string;
-  overView: string;
+  release_date: string;
+  overview: string;
   imgPath: string;
-  posterPath: string;
+  poster_path: string;
 }

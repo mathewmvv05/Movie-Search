@@ -10,7 +10,8 @@ import {Observable} from "rxjs";
   template: `
     <div>
       <div *ngFor="let results of searchResults | async">
-        <p>{{results.title}}</p>
+        <h2>{{results.title}}</h2>
+        <img [src]="'https://image.tmdb.org/t/p/w500/' + results.posterPath" alt="">
       </div>
     </div>
   `

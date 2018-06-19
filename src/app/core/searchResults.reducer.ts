@@ -7,11 +7,11 @@ export function searchResultsReducer(state: ISearchResults[] = null, action): IS
       case KEY_WORD_SEARCH_SUCCESS:
         return action.payload.map(result => ({
           title: result.title,
-          releaseDate: result.releaseDate,
+          releaseDate: result.release_date,
           language: result.language,
-          overView: result.overView,
+          overView: result.overview,
           imgPath: result.imgPath,
-          posterPath: result.posterPath
+          posterPath: result.poster_path
         }));
 
       default:
