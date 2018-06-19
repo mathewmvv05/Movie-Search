@@ -1,6 +1,8 @@
 # TestMovieSearchEngine
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+This is a basic single page angular application for searching movie using Redux pattern.
+Search is done using a public API from https://developers.themoviedb.org.
+The request is authorized with the API key that can be generated from above URL.
 
 ## Development server
 
