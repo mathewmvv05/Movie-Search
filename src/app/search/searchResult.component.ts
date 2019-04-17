@@ -10,22 +10,36 @@ import { ISearchResults } from './searchResults.interface';
   selector: 'app-search-results',
   template: `
     <!--This template part also could be split into different component in case of unlimited time-->
-    <div>
-      <div *ngFor="let results of searchResults | async">
-        <img class="poster" [src]="'https://image.tmdb.org/t/p/w500/' + results.poster_path">
-        <h2>{{results.title}}</h2>
-        <p>Release Date: {{results.release_date}}</p>
+    
+    <div class="testing123">
+      <mat-card *ngFor="let results of searchResults | async" class="example-card">
+      <mat-card-header>
+        <mat-card-title>{{results.title}}</mat-card-title>
+        <mat-card-subtitle>{{results.release_date}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="'https://image.tmdb.org/t/p/w500/' + results.poster_path">
+      <mat-card-content>
         <p>Overview: {{results.overview}}</p>
         <p>Language: {{results.original_language}}</p>
         <p>Rating: {{results.vote_average}}</p>
-        <hr>
-      </div>
+      </mat-card-content>
+      </mat-card>
     </div>
   `,
   styles: [`
     .poster {
       height: 300px;
       width: 200px;
+    }
+    .example-card {
+      max-width: 400px;
+      margin: 10px;
+    }
+    .testing123 {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   `]
 })
