@@ -10,6 +10,7 @@ import { reducers } from './core/reducers';
 import { AppComponent } from './app.component';
 import { MovieSearchEffects } from './core/search/search.effects';
 import { SearchModule } from './search/searchModule';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { SearchModule } from './search/searchModule';
     BrowserModule,
     StoreModule.forRoot(reducers),
     SearchModule,
+    BrowserAnimationsModule,
 
     appRouting
   ],
