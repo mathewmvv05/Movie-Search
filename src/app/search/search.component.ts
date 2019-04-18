@@ -7,18 +7,20 @@ import {IStore} from '../core/store';
   selector: 'app-search',
   template: `
     <!--This template part could be done better incase of unlimited time-->
-    
-    <input matInput #box type="text" (keyup)="onKey(box.value)" placeholder="Enter The Movie Name">
-    <button mat-button color="primary" (click)="search()">Search</button>
-    <div>
-        <app-search-results></app-search-results>
-    </div>
+  <mat-toolbar>Movie Search Engine</mat-toolbar>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput #box type="text" (keyup)="onKey(box.value)" placeholder="Enter The Movie Name...">
+    </mat-form-field>
+  </form>
+  <button mat-button color="primary" (click)="search()">Search</button>
+  <div>
+      <app-search-results></app-search-results>
+  </div>
   `,
   styles:[
     `
-    .example-form {
-      min-width: 150px;
-      max-width: 500px;
+    .example-form { 
       width: 100%;
     }
     
