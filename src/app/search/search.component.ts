@@ -14,7 +14,7 @@ import {IStore} from '../core/store';
           <div>
               <form class="example-form">
                   <mat-form-field class="example-full-width">
-                      <input matInput #box type="text" (keyup)="onKey(box.value)" placeholder="Enter the Movie Name...">
+                      <input matInput #box type="text" (keyup)="onKey(box.value)" placeholder="Please enter a movie name...">
                   </mat-form-field>
               </form>
           </div>
